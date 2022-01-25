@@ -3,6 +3,7 @@ const path = require('path')
 //Para que funcione em qualquer SO essa requisição é feita.
 
 module.exports = {
+  mode: 'development',
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
