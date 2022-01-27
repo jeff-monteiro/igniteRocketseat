@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require(' html-webpack-plugin')
 
 //Para que funcione em qualquer SO essa requisição é feita.
 
@@ -12,6 +13,11 @@ module.exports = {
   resolve: {
     extensions: [ '.js', '.jsx'],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'public' , 'index.html')
+    })
+  ],
 
   // babel-loader é responsável por fazer a comunicação com o webpack.
 
