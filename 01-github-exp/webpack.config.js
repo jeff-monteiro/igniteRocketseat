@@ -1,5 +1,5 @@
 const path = require('path')
-const HtmlWebpackPlugin = require(' html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 //Para que funcione em qualquer SO essa requisição é feita.
 
