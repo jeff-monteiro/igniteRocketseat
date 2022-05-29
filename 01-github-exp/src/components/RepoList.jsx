@@ -1,4 +1,5 @@
 import React from 'react';
+import { RepoItem } from './RepoItem';
 
 const repositoryName = 'unform'
 
@@ -9,12 +10,7 @@ export function RepoList(){
 
             <ul>
                 <li>
-                    <strong>{repositoryName}</strong>
-                    <p>Forms in React</p>
-
-                    <a href="https://github.com/">
-                        Acessar Repositórios
-                    </a>
+                    {RepoItem}
                 </li>
                 <li>
                     <strong>unform</strong>
