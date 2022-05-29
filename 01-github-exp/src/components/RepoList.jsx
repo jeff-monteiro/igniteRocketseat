@@ -1,5 +1,7 @@
 import React from 'react';
 
+const repositoryName = 'unform'
+
 export function RepoList(){
     return (
         <section className="repository-list">
@@ -7,7 +9,7 @@ export function RepoList(){
 
             <ul>
                 <li>
-                    <strong>unform</strong>
+                    <strong>{repositoryName}</strong>
                     <p>Forms in React</p>
 
                     <a href="https://github.com/">
