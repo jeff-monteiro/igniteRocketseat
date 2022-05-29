@@ -1,4 +1,5 @@
 import React from 'react';
+import { RepoFollower } from './RepoFollower';
 import { RepoItem } from './RepoItem';
 
 //const repositoryName = 'unform'
@@ -10,7 +11,7 @@ export function RepoList(){
 
             <ul>
                 <RepoItem />
-                <RepoItem />
+                <RepoFollower />
                 <RepoItem />
             </ul>
         </section>
