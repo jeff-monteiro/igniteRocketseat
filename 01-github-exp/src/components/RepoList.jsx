@@ -2,7 +2,11 @@ import React from 'react';
 import { RepoFollower } from './RepoFollower';
 import { RepoItem } from './RepoItem';
 
-//const repositoryName = 'unform'
+const repositoryName = {
+    name: 'unform',
+    description: 'Forms in React',
+    link: 'https://github.com/unform/unform'
+}
 
 export function RepoList(){
     return (
@@ -10,7 +14,7 @@ export function RepoList(){
             <h1>Lista de Repositórios</h1>
 
             <ul>
-                <RepoItem />
+                <RepoItem repository ={repositoryName} />
                 <RepoFollower />
                 <RepoItem />
             </ul>
