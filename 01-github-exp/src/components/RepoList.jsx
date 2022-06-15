@@ -15,8 +15,8 @@ export function RepoList(){
 
             <ul>
                 <RepoItem repository ={repositoryName} />
-                <RepoFollower />
-                <RepoItem />
+                <RepoFollower repository ={repositoryName} />
+                <RepoItem repository ={repositoryName} />
             </ul>
         </section>
     );
