@@ -1,5 +1,4 @@
 import React from 'react';
-import { RepoFollower } from './RepoFollower';
 import { RepoItem } from './RepoItem';
 
 const repositoryName = {
