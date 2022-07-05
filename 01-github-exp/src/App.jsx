@@ -5,7 +5,6 @@ import './styles/global.scss';
 export function App() {
   return (
     <>
-      console.log("Olá")
       <RepoList />
       <Counter />
     </> 
