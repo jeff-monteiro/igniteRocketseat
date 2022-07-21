@@ -1,3 +1,10 @@
+**Fundamentos do ReactJS**
+
+Biblioteca javascript, porém exitem frameworks que utilizam o reactjs por baixo dos panos(Remix e Nextjs).
+
+_SPA_ => Single Page Application(AngularJS, Vue, React, Svelte, Aurelia...)
+_SSR_ => Server Side Rendering(Wordpress, Ruby & Rails (Github), Magento...)
+
 **Bundlers & Compilers**
 
 Com o mundo de desenvolvimento evoluindo à todo momento, nem sempre todos os browsers conseguem acompanhar a evolução da tecnologia para dar suporte à sintaxe mais moderna.
