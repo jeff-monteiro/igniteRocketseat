@@ -2,6 +2,7 @@
 
 Biblioteca javascript, porém exitem frameworks que utilizam o reactjs por baixo dos panos(Remix e Nextjs).
 
+*Rendering Pattern*
 _SPA_ => Single Page Application(AngularJS, Vue, React, Svelte, Aurelia...)
 _SSR_ => Server Side Rendering(Wordpress, Ruby & Rails (Github), Magento...)
 
