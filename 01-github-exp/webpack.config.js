@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 //Para que funcione em qualquer SO essa requisição é feita.
@@ -17,12 +18,14 @@ module.exports = {
   },
   devServer: {
     static: path.resolve(__dirname, 'public'),
+    hot: true,
   },
   plugins: [
+    isDevelopment && new ReactRefreshWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public' , 'index.html')
     })
-  ],
+  ].filter(Boolean),
 
   // babel-loader é responsável por fazer a comunicação com o webpack.
 
@@ -31,7 +34,14 @@ module.exports = {
       {
         test: /\.jsx$/,
         exclude: /node_modules/,
-        use: 'babel-loader', 
+        use: {
+          loader:'babel-loader',
+          options: {
+            plugins: [
+              isDevelopment && require.resolve('react-refresh/babel')
+            ].filter(Boolean)
+          }
+        } 
       },
       {
         test: /\.scss$/,
