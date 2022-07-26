@@ -14,4 +14,4 @@ Para isso existem os compilers, como o babel que convertem o código moderno par
 
 Nessa aula vamos aprender a diferença entre compilers e bundlers, e também sobre as novas features que já existem nos navegadores mais modernos, que é a feature de ESModules.
 
-Vamos também ter uma introdução ao *Vite* que irá substituir os bundlers e compilers tradicionais (como babel e webpack) e entender como ele tira proveito das funcionalidades mais modernas dos navegadores para ter uma melhor performance de compilação e execução.
+Vamos também ter uma introdução ao *Vite* que irá substituir os bundlers e compilers tradicionais (*como babel e webpack*) e entender como ele tira proveito das funcionalidades mais modernas dos navegadores para ter uma melhor performance de compilação e execução.
