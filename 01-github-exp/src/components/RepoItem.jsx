@@ -5,7 +5,7 @@ export function RepoItem(props){
             <p>Forms in React</p>
 
             <a href="https://github.com/">
-                Acessar Repositórios e explorar
+                Acessar Repositórios
             </a>
         </li>
     );
