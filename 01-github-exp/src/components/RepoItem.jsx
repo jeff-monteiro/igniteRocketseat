@@ -1,10 +1,10 @@
 export function RepoItem(props){
     return (
         <li>
-            <strong>{props.repositoryName ?? 'Default'}</strong>
-            <p>Forms in React</p>
+            <strong>{props.repository.name}</strong>
+            <p>{props.repository.description}</p>
 
-            <a href="https://github.com/">
+            <a href={props.repository.html_url}>
                 Acessar Repositórios
             </a>
         </li>
