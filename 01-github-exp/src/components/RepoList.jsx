@@ -1,8 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { RepoItem } from './RepoItem';
 
 import '../styles/repositories.scss';
+
+//https://api.github.com/users/jeff-monteiro/repos
 
 const repositoryName = {
     name: 'unform',
@@ -12,7 +14,7 @@ const repositoryName = {
 
 export function RepoList(){
 
-    const [] = useState();
+    const [repositories, setRepositories] = useState([]);
 
     return (
         <section className="repository-list">
