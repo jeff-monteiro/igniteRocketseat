@@ -6,10 +6,18 @@ import '../styles/repositories.scss';
 
 //https://api.github.com/users/jeff-monteiro/repos
 
+// This time we don't define 'props' in the name because is not a property of RepoList but is a state
+
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string
+}
+
 
 export function RepoList(){
 
-    const [repositories, setRepositories] = useState([]);
+    const [repositories, setRepositories] = useState<Repository[]>([]);
 
     // get two parameters: which function and when execute this function
     useEffect(() => {
